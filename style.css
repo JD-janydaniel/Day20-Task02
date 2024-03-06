@@ -1,0 +1,61 @@
+body{
+    background-color: whitesmoke;
+}
+.section{
+    text-align: center;
+}
+.heading{
+    font-size: 70px;
+    color: green;
+}
+.paragraph{
+    font-size: 30px;
+    font-style: italic;
+   }
+   .label{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 25%;
+   }
+   .input{
+    background-color: #F0FFF0;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 38%;
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+   }
+   .button{
+    background-color: #F0FFF0;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-left:43%;
+    width: 200px;
+    height:50px;
+    border-radius: 10px;
+   }
+   
+   .container{
+    margin-top: 50px;
+    text-align: center;
+   }
+   .card{
+    background-color: #F0FFF0;
+    font-size: 30px;
+    font-style:italic ;
+    font-weight: 600;
+    margin-left: 26%; 
+    border-radius: 10px;
+    color:red;
+   }
+   .card-title{
+    font-size: 30px;
+   }
+   .span{
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: 600px;
+    color: red;
+   }
