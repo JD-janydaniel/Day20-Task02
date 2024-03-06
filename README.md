@@ -16,6 +16,7 @@
   </ul>
   <li>Use only HTML, CSS, BOOTSTRAP,& JAVASCRIPT</li>
 </ul>
+Here i have used Async & Await function to retrive the data from the API<br>
 I have successfully developed the code and deployed the code using the github repo and NetLify by following above mentioned constraints<br>
 Here I have used a Carbon Intensity API to develop the project/task<br>
 <h3>API Link</h3>
