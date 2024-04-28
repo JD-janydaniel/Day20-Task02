@@ -1,28 +1,65 @@
 body{
     background-color: whitesmoke;
+    /* border: 2px solid black; */
+    height: 100%;
+    padding: 20px;
 }
 .section{
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
-.heading{
-    font-size: 70px;
-    color: green;
+@media screen and (min-width:720px){
+    .heading{
+        font-size: 5rem;
+        color: green;
+        border: 3px solid greenyellow;
+        border-radius: 30px;
+    }
+    .paragraph{
+        font-size: 2em;
+        font-style: italic;
+        border:3px dashed red;
+        border-radius: 30px;
+       }
 }
-.paragraph{
-    font-size: 30px;
-    font-style: italic;
+@media screen and (max-width:720px){
+    .heading{
+        font-size: 2rem;
+        color: green;
+        border: 3px solid greenyellow;
+        border-radius: 30px;
+    }
+    .paragraph{
+        font-size: 1em;
+        font-style: italic;
+        border:3px dashed red;
+        border-radius: 30px;
+       }
+}
+
+
+
+   .div{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 3px dotted green;
+    border-radius: 30px;
+    
    }
    .label{
-    font-size: 22px;
+    font-size: 2rem;
     font-weight: 700;
-    margin-top: 10px;
-    margin-left: 20%;
+    margin: 10px;
+    padding:30px;
+    /* text-align: center; */
    }
    .input{
     background-color: #F0FFF0;
     font-size: 20px;
     margin-top: 10px;
-    margin-left: 38%;
+    /* margin-left: 38%; */
     width: 400px;
     height: 50px;
     border-radius: 10px;
@@ -32,7 +69,7 @@ body{
     background-color: #F0FFF0;
     font-size: 22px;
     margin-top: 20px;
-    margin-left:43%;
+    /* margin-left:43%; */
     width: 200px;
     height:50px;
     border-radius: 50px;

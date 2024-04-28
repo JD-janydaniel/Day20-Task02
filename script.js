@@ -58,12 +58,15 @@ function create_div(tagname,attrname,attrvalue){
 
 let section1 = create_section("section","class","section");
 let heading1 =  create_header("h1","class","heading","Our OpenAPI allows consumers and smart devices to schedule and minimise CO2 emission around UK");
-let para = create_para("p","class","paragraph","Carbon dioxide emissions are the primary driver of global climate change. It's widely recognized that to avoid the worst impacts of climate change, the world needs to urgently reduce emissions. But, how this responsibility is shared between regions, countries, and individuals has been an endless point of contention in international discussions.");
+let para = create_para("p","class","paragraph",`Carbon dioxide emissions are the primary driver of global climate change. It's widely recognized that to avoid the worst impacts of climate change, the world needs to urgently reduce emissions. But, how this responsibility is shared between regions, countries, and individuals has been an endless point of contention in international discussions.`);
 
 section1.append(heading1,para);//appended heading1 and para to section1
 document.body.append(section1);//appended section to body
 
-let label1 = create_label("label","for","search","class","label","Enter the details: (enter the  date in year-month-date format, of which you want to know the CO2 emissions)");
+let div = document.createElement("div");
+div.className = "div"
+let label1 = create_label("label","for","search","class","label",`Enter the details: 
+(enter the  date in year-month-date format, of which you want to know the CO2 emissions)`);
 
 let break2 = create_break();
 
@@ -73,7 +76,8 @@ let break3 = create_break();
 
 let button = create_button("button","type","button","class","button","onclick","button_click()","Click Me");
 
-document.body.append(label1,break2,input1,break3,button);
+div.append(label1,break2,input1,break3,button)
+document.body.append(div);
 
 //disable the button initialy
 button.disabled = true;
@@ -112,7 +116,7 @@ async function button_click(){
   for(var i=0;i<weather_forecast.length;i++)
   {
   var col = document.createElement("div");
-  col.className = "col-md-12"
+  col.className = "col-sm-12 col-md-12 col-lg-12"
   var card = document.createElement("div");
   card.className = "main"
   card.innerHTML =`<div class="card border-success mb-3" style="max-width: 30rem;">
